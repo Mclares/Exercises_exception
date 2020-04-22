@@ -48,7 +48,7 @@ public class Account {
 	}
 	
 	public void deposit(double amount) {
-		this.balance += amount;
+		balance += amount;
 	}
 	
 	public void withdraw(double amount) {
@@ -58,6 +58,6 @@ public class Account {
 		if (amount > balance) {
 			throw new DomainException("Not enough balance!");
 		}
-		this.balance -= amount;
+		balance -= amount;
 	}
 }
